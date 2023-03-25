@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@100;300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', cursive;
+}
+
+body {
+    background-attachment: fixed;
+}
+
+header {
+    height: 100px;
+    line-height: 100px;
+    background-color: #ffffff;
+    height: 100px;
+    color: #080808;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 1000;
+    text-align: right;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #000000;
+    font-family: 'Great Vibes', 'cursive';
+    font-size: 4.5em;
+
+}
+
+
+
+.widget {
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.num {
+    text-align: center;
+}
+
+.rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 00px;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 1px dashed black;
+    width: 300px;
+    height: 400px;
+}
+
+.room-image {
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.room-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.room-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.room-price {
+    color: green;
+    font-size: 18px;
+}
+
+.room-button {
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #307800 100%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.numbers {
+    margin-top: 600px;
+}
+
+.bron {
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 8px !important;
+    z-index: 10 !important;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #307800 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
+}
+
+.name {
+    text-align: left;
+    position: relative;
+}
+
+.photo1 {
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.podval {
+    color: rgb(89, 158, 21);
+}
+
+.hellophoto {
+    z-index: 0;
+    position: relative;
+}
+
+.hellotext {
+    font-size: 320%;
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+
+.onas {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.fo {
+    font-size: 300%;
+}
+
+.onastext {
+    left: 50%;
+    position: absolute;
+    text-align: left;
+}
+
+.onasphoto {
+    position: absolute;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.onas1 {
+    width: 180px;
+    height: 240px;
+    left: 5%;
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    margin-top: 60px;
+
+}
+
+.map1 {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-size: 200%;
+}
+
+.map {
+    margin: 20px;
+    text-align: center;
+    border-radius: 3%;
+    border: 1px solid black;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wifi {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: aquamarine;
+}
+
+.photo {
+    position: relative;
+    text-align: center;
+    font-size: 200%;
+}
+
+.numbertext {
+    text-align: center;
+    font-size: 200%;
+}
+
+.number {
+    color: #ffffff;
+}
+
+.features {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.features li {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+}
+
+.features img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.features h3 {
+    text-align: center;
+}
+
+.features p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2ss ease-in-out;
+    /* или all 2s ease-in-out */
+}
+
+footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 16px;
+}
+
+footer ul li i {
+    margin-right: 10px;
+}
+
+footer ul.social-icons {
+    display: flex;
+}
+
+footer ul.social-icons li {
+    margin-right: 20px;
+}
+
+footer ul.social-icons li a {
+    color: #fff;
+}
+
+footer ul.social-icons li a:hover {
+    color: #f0f0f0;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>paradise</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+    </style>
+    <script>
+        window.addEventListener("scroll", function () {
+            let footer = document.querySelector("footer");
+            let footerPosition = footer.getBoundingClientRect().top;
+            let screenPosition = window.innerHeight;
+
+            if (footerPosition < screenPosition) {
+                footer.style.opacity = "1";
+                footer.style.transform = "translateY(0)";
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="логотип гостевого дома Paradise">
+        <iframe class="widget" src="https://yandex.ru/sprav/widget/rating-badge/61005869336?type=rating" width="150"
+            height="50" frameborder="0"></iframe>
+        <h1>Paradise</h1>
+        
+        
+    </header>
+    <div class="hello">
+        <div class="hellophoto">
+            <img src="https://million-wallpapers.ru/wallpapers/0/26/495983111116833/t-mnoe-nebo-nad-bolshimi-gorami.jpg"
+                alt="" width="100%">
+            <div class="hellotext">
+                <p>гостевой дом</p>
+                <h2>Paradise</h2>
+            </div>
+        </div>
+    </div>
+    <div class="onas" id="onas">
+        <h2 class="fo">О нас</h2>
+        <div class="onastext">
+            <p>Гостевой дом «Paradise» находится в 5 минутах ходьбы от галечного пляжа. В шаговой доступности
+                продуктовый магазин, аптека, остановка маршрутного такси.
+
+                Для размещения гостям предлагаются 2х-6ти местные номера. В номерах есть все необходимое для комфортного
+                проживания.
+
+                В ухоженном зеленом дворике находятся мангал и летняя беседка, для детей детская площадка. На территории
+                частного сектора имеется полностью оборудованная всем необходимым кухня для самостоятельно приготовить
+                пищи и своя столовая.
+
+                Для гостей, приехавших на авто, есть парковка.
+
+                За дополнительную плату предоставляется трансфер.
+
+                Встреча гостей по договоренности.
+
+                Бронирование номеров по телефону, предоплата 10% от стоимости проживания.</p>
+        </div>
+        <div class="onas1">
+            <img src="logo.png" alt="">
+        </div>
+
+    </div>
+    <div class=numbers>
+        <div class="numbertext">
+            <h2>Номера</h2>
+        </div>
+        <div class="rooms-container">
+            <div class="room">
+                <img src="https://avatars.mds.yandex.net/get-altay/6221595/2a0000017fd6ab79c21e1ab6075e1e00e47e/XL" alt="Room 1" class="room-image">
+                <div class="room-info">
+                    <div class="room-name">Стандартный номер</div>
+                    <div class="room-price">5000 руб./ночь</div>
+                    <button class="room-button">Забронировать</button>
+                </div>
+            </div>
+
+            <div class="room">
+                <img src="https://avatars.mds.yandex.net/get-altay/5517178/2a0000017cd089ca0b983d84be535dbd6c6c/XL" alt="Room 2" class="room-image">
+                <div class="room-info">
+                    <div class="room-name">Улучшенный номер</div>
+                    <div class="room-price">7000 руб./ночь</div>
+                    <button class="room-button">Забронировать</button>
+                </div>
+            </div>
+
+            <div class="rooms-container">
+                <div class="room">
+                    <img src="https://avatars.mds.yandex.net/get-altay/5098065/2a000001818ab8bbe5a1e97980465db8f1cf/XL" alt="Room 1" class="room-image">
+                    <div class="room-info">
+                        <div class="room-name">Стандартный номер</div>
+                        <div class="room-price">5000 руб./ночь</div>
+                        <button class="room-button">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <img src="https://avatars.mds.yandex.net/get-altay/4479219/2a0000017cd03a972c2f9764f720ef72dc13/XL" alt="Room 2" class="room-image">
+                <div class="room-info">
+                    <div class="room-name">Улучшенный номер</div>
+                    <div class="room-price">7000 руб./ночь</div>
+                    <button class="room-button">Забронировать</button>
+                </div>
+            </div>
+        </div>
+        <div class="rooms-container">
+            <div class="room">
+                <img src="https://avatars.mds.yandex.net/get-altay/5491685/2a0000017cd03a342325356418dff9a8548d/XL" alt="Room 1" class="room-image">
+                <div class="room-info">
+                    <div class="room-name">Стандартный номер</div>
+                    <div class="room-price">5000 руб./ночь</div>
+                    <button class="room-button">Забронировать</button>
+                </div>
+            </div>
+
+            <div class="room">
+                <img src="https://avatars.mds.yandex.net/get-altay/5965316/2a00000181a3b770087877f2909bbbe64b20/XL" alt="Room 2" class="room-image">
+                <div class="room-info">
+                    <div class="room-name">Улучшенный номер</div>
+                    <div class="room-price">7000 руб./ночь</div>
+                    <button class="room-button">Забронировать</button>
+                </div>
+            </div>
+
+            <div class="rooms-container">
+                <div class="room">
+                    <img src="room1.jpg" alt="Room 1" class="room-image">
+                    <div class="room-info">
+                        <div class="room-name">Стандартный номер</div>
+                        <div class="room-price">5000 руб./ночь</div>
+                        <button class="room-button">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <img src="room2.jpg" alt="Room 2" class="room-image">
+                <div class="room-info">
+                    <div class="room-name">Улучшенный номер</div>
+                    <div class="room-price">7000 руб./ночь</div>
+                    <button class="room-button">Забронировать</button>
+                </div>
+            </div>
+        </div>
+        <div class="photo">
+            <h2>фото</h2>
+            <div class="photo1">
+                <img src="https://avatars.mds.yandex.net/get-altay/4398559/2a00000181a3bab0c174d577936f1f41077e/XL" alt="">
+                <img src="https://avatars.mds.yandex.net/get-altay/5517178/2a0000017cd089ca0b983d84be535dbd6c6c/XL" alt="">
+                <img src="https://avatars.mds.yandex.net/get-altay/4824927/2a0000017fd6ab64eeb7485cd1a664bdf1d0/XL" alt="">
+                <img src="https://avatars.mds.yandex.net/get-altay/6221595/2a0000017fd6ab79c21e1ab6075e1e00e47e/XL" alt="">
+                <img src="logo.png" alt="">
+                <img src="logo.png" alt="">
+                <img src="logo.png" alt="">
+                <img src="logo.png" alt="">
+                <img src="logo.png" alt="">
+                <img src="logo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="udobstva">
+        <div class="features">
+            <h2>Почему выбирают наш гостевой дом?</h2>
+            <ul>
+                <li>
+                    <img src="forest.png" alt="лес">
+                    <h3>Нахождение в лесу</h3>
+                    <p>Наш отель находится в лесу в 5 минутах ходьбы от черного моря.</p>
+                </li>
+                <li>
+                    <img src="transfer.png" alt="Трансфер">
+                    <h3>Трансфер</h3>
+                    <p>Мы бесплатно довезем вас от ж/д вокзала до вашего номера.</p>
+                </li>
+                <li>
+                    <img src="kitchen.png" alt="Кухня"> 
+                    <h3>Кухня</h3>
+                    <p></p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="wi-fi.png" alt="Бесплатный Wi-Fi">
+                    <h3>Бесплатный Wi-Fi</h3>
+                    <p>Вы можете подключиться к бесплатному Wi-Fi в любой точке нашего отеля и оставаться на связи с
+                        друзьями и бизнесом.</p>
+                </li>
+                <li>
+                    <img src="parking.png" alt="Бесплатная парковка">
+                    <h3>Бесплатная парковка</h3>
+                    <p>Вы можете оставить свой автомобиль на нашей охраняемой парковке и не беспокоиться о его
+                        безопасности.</p>
+                </li>
+                <li>
+                    <img src="24.png" alt="круглосуточное обслуживание">
+                    <h3>Круглосуточное обслуживание</h3>
+                    <p>В течении всего дня вы можете обратиться за помощью.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="map1">
+        <h2>Мы на карте</h2>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=61005869336" width="560" height="400" frameborder="0"></iframe>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>О нас</h3>
+                    <p>Отель «paradise» — это современный и уютный гостевой дом вдали от города. Мы предлагаем
+                        комфортабельные
+                        номера, близость к морю и дружелюбный сервис.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Краснодарский край, город Сочи, микрорайон
+                            Совет-Квадже, улица Сибирская 31/17</li>
+                        <li><a href="tel:+7 (918) 901-01-86" class="fas fa-phone" class="number">+7 (918) 901-01-86</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://yandex.ru/business/widget/request/company/61005869336" class="bron">забронировать</a>
+</body>
+
+</html>
