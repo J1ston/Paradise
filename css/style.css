@@ -119,9 +119,7 @@ header h1 {
     margin-top: 600px;
 }
 
-.h1{
-    margin-bottom: 5px;
-}
+
 .bron {
     position: fixed !important;
     bottom: 10px !important;
@@ -385,5 +383,42 @@ footer ul.social-icons li a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    .widget {
+        display: none;
+        Visibility: hidden;
+    }
+    .hellophoto{
+        display: flex;
+        height: 100%;
+        width: 300%;
+    }
+    .map{
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 400px;
+        display: flex;
+    }
+    .onastext{
+        left: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+    .onas1{
+        display: none;
+        Visibility: hidden;
+    }
+    .bron{
+        display: none;
+        Visibility: hidden;
+    }
+    .photo1{
+        margin: 15px;
+    }
+    .ph{
+        height: 100%;
+        width: 100%;
+    }
 
 }
