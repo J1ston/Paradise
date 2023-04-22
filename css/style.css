@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@100;300;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', cursive; 
+    font-family: 'Roboto', cursive;
 }
 
 body {
     background-attachment: fixed;
 }
-
+html{
+    overflow-x: hidden;
+}
 header {
     height: 100px;
     line-height: 100px;
@@ -46,8 +49,8 @@ header h1 {
 
 
 .widget {
-    width: 150px; 
-    height: 50px; 
+    width: 150px;
+    height: 50px;
     margin-right: 20px;
     position: absolute;
     top: 10px;
@@ -70,9 +73,10 @@ header h1 {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    border: 1px dashed black;
+    border: 1px solid black;
     width: 300px;
     height: 400px;
+    border-radius: 15px;
 }
 
 .room-image {
@@ -80,6 +84,9 @@ header h1 {
     width: 280px;
     height: 280px;
     object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid black;
 }
 
 .room-info {
@@ -101,17 +108,20 @@ header h1 {
 }
 
 .room-button {
-    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #307800 100%);
+    background-image: linear-gradient(45deg, #45b1fd 0%, #00e0d6 50%, #c8f067 100%);
     color: white;
     padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .numbers {
     margin-top: 600px;
 }
 
+.h1{
+    margin-bottom: 5px;
+}
 .bron {
     position: fixed !important;
     bottom: 10px !important;
@@ -141,6 +151,7 @@ header h1 {
 .photo1 {
     margin-right: 20px;
     position: relative;
+  
 
 }
 
@@ -261,13 +272,13 @@ header h1 {
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .features img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    
 }
 
 .features h3 {
@@ -328,4 +339,51 @@ footer ul.social-icons li a {
 
 footer ul.social-icons li a:hover {
     color: #f0f0f0;
+}
+.row{
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    .widget {
+        display: none;
+        Visibility: hidden;
+    }
+    .hellophoto{
+        display: flex;
+        height: 100%;
+        width: 300%;
+    }
+    .map{
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 400px;
+        display: flex;
+    }
+    .onastext{
+        left: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+    .onas1{
+        display: none;
+        Visibility: hidden;
+    }
+    .bron{
+        display: none;
+        Visibility: hidden;
+    }
+    .photo1{
+        margin: 15px;
+    }
+    .ph{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
 }
