@@ -488,6 +488,9 @@ footer ul.social-icons li a:hover {
     .inf{
         display: none;
         Visibility: hidden;
+        position: absolute;
+        top: -99999px;
+        left: -9999px;
     }
     .ninf{
         display: inline;
