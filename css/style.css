@@ -11,9 +11,10 @@
 body {
     background-attachment: fixed;
     text-decoration: none;
+
 }
 
-html {
+*{
     overflow-x: hidden;
 }
 
