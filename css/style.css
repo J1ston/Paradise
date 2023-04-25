@@ -433,12 +433,66 @@ footer ul.social-icons li a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    .widget {
+        display: none;
+        Visibility: hidden;
+    }
+
+    .hellophoto {
+       
+        display: flex;
+        height: 100%;
+        width: 300%;
+    }
+
+    .hellotext{
+        top: 30%;
+    }
+
+
     .map {
         margin-left: auto;
         margin-right: auto;
         width: auto;
         height: auto;
         display: flex;
+        min-width: 400px;
+        min-height: 300px;
+    }
+
+    .onastext {
+        left: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+
+    .onas1 {
+        display: none;
+        Visibility: hidden;
+    }
+
+    .bron {
+        display: none;
+        Visibility: hidden;
+    }
+
+    .photo1 {
+        margin: 15px;
+    }
+
+    .ph {
+        height: 100%;
+        width: 100%;
+    }
+    .inf{
+        display: none;
+        Visibility: hidden;
+    }
+    .ninf{
+        display: inline;
+        visibility: visible;
+        position: relative;
     }
     
 
