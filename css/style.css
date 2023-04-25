@@ -10,13 +10,10 @@
 
 body {
     background-attachment: fixed;
-    text-decoration: none;
 
 }
 
-*{
-    overflow-x: hidden;
-}
+
 
 header {
     height: 100px;
@@ -157,6 +154,7 @@ header h1 {
 
 }
 
+
 .podval {
     color: rgb(89, 158, 21);
 }
@@ -167,7 +165,22 @@ header h1 {
     text-align: center;
     position: relative;
     z-index: 0;
+    max-width: 99vw;
+    min-height: 100vh;
 }
+
+.map {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 90vw;
+}
+
+
 
 .hellotext {
     font-size: 320%;
@@ -189,7 +202,7 @@ header h1 {
 
 .white {
     background-color: white;
-    width: 100vw;
+
 }
 
 .onas {
@@ -198,8 +211,9 @@ header h1 {
     text-align: center;
     background-color: white;
     z-index: 10;
-    width: 100vw;
+
     height: 450px;
+
 }
 
 .fo {
@@ -252,6 +266,7 @@ header h1 {
 
     margin-left: auto;
     margin-right: auto;
+    max-width: 80vw;
 }
 
 .wifi {
@@ -426,23 +441,24 @@ footer ul.social-icons li a:hover {
     .hellophoto {
 
         display: flex;
-        height: 100%;
-        width: 300%;
+        height: 100vw;
+        width: 100vh;
     }
 
     .hellotext {
         top: 30%;
+        max-width: 99vw;
+        text-align: center;
     }
 
 
     .map {
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        height: auto;
+
         display: flex;
-        min-width: 400px;
         min-height: 300px;
+        max-width: 80vw;
+        position: relative;
+        width: 80vw;
     }
 
     .onastext {
@@ -476,78 +492,13 @@ footer ul.social-icons li a:hover {
         visibility: visible;
         position: relative;
     }
+    .hellotext{
+        font-size: 200%;
+        width: 3s00px;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .widget {
-        display: none;
-        Visibility: hidden;
-    }
 
-    .hellophoto {
-
-        display: flex;
-        height: 100%;
-        width: 300%;
-    }
-
-    .hellotext {
-        top: 30%;
-    }
-
-
-    .map {
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        height: auto;
-        display: flex;
-        min-width: 400px;
-        min-height: 300px;
-    }
-
-    .onastext {
-        left: 0%;
-        margin-left: 10%;
-        margin-right: 10%;
-
-    }
-
-    .onas1 {
-        display: none;
-        Visibility: hidden;
-    }
-
-    .bron {
-        display: none;
-        Visibility: hidden;
-    }
-
-    .photo1 {
-        margin: 15px;
-    }
-
-    .ph {
-        height: 100%;
-        width: 100%;
-    }
-
-    .inf {
-        display: none;
-        Visibility: hidden;
-        position: absolute;
-        top: -99999px;
-        left: -9999px;
-    }
-
-    .ninf {
-        display: inline;
-        visibility: visible;
-        position: relative;
-    }
-
-
-}
 
 /*
     <img src="photo_2023-04-22_13-54-40 [problembo.com].jpg" alt="" width="100%">
