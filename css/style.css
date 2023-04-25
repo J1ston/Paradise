@@ -10,10 +10,13 @@
 
 body {
     background-attachment: fixed;
+    text-decoration: none;
 }
-html{
+
+html {
     overflow-x: hidden;
 }
+
 header {
     height: 100px;
     line-height: 100px;
@@ -149,7 +152,7 @@ header h1 {
 .photo1 {
     margin-right: 20px;
     position: relative;
-  
+
 
 }
 
@@ -158,17 +161,31 @@ header h1 {
 }
 
 .hellophoto {
-    z-index: 0;
-    position: relative;
+
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .hellotext {
     font-size: 320%;
     z-index: 1;
     position: absolute;
-    top: 60px;
-    left: 100px;
+    text-align: center;
+    left: 50%;
+    top: 40%;
+    /* ширина и высота 2 блока */
+    width: 500px;
+    height: 250px;
+    /* Значения определяются в зависимости от его размера */
+    /* margin-left = - width / 2 */
+    margin-left: -250px;
+    /* margin-top = - height / 2 */
+    margin-top: -125px;
+
 }
+
+
 
 .onas {
     position: relative;
@@ -184,12 +201,15 @@ header h1 {
     left: 50%;
     position: absolute;
     text-align: left;
+    margin-right: 55px;
+    margin-top: 20px;
+    font-size: medium;
 }
 
 .onasphoto {
     position: absolute;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .onas1 {
@@ -276,7 +296,7 @@ header h1 {
 .features img {
     width: 100px;
     height: 100px;
-    
+
 }
 
 .features h3 {
@@ -338,8 +358,14 @@ footer ul.social-icons li a {
 footer ul.social-icons li a:hover {
     color: #f0f0f0;
 }
-.row{
+
+.row {
     margin: 10px;
+}
+.ninf{
+    display: none;
+    Visibility: hidden;
+    position: absolute;
 }
 
 @media (max-width: 767px) {
@@ -347,83 +373,73 @@ footer ul.social-icons li a:hover {
         display: none;
         Visibility: hidden;
     }
-    .hellophoto{
+
+    .hellophoto {
+       
         display: flex;
         height: 100%;
         width: 300%;
     }
-    .map{
+
+    .hellotext{
+        top: 30%;
+    }
+
+
+    .map {
         margin-left: auto;
         margin-right: auto;
-        width: 500px;
-        height: 400px;
+        width: auto;
+        height: auto;
         display: flex;
+        min-width: 400px;
+        min-height: 300px;
     }
-    .onastext{
+
+    .onastext {
         left: 0%;
         margin-left: 10%;
         margin-right: 10%;
 
     }
-    .onas1{
+
+    .onas1 {
         display: none;
         Visibility: hidden;
     }
-    .bron{
+
+    .bron {
         display: none;
         Visibility: hidden;
     }
-    .photo1{
+
+    .photo1 {
         margin: 15px;
     }
-    .ph{
+
+    .ph {
         height: 100%;
         width: 100%;
     }
-    .hello{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
+    .inf{
+        display: none;
+        Visibility: hidden;
+    }
+    .ninf{
+        display: inline;
+        visibility: visible;
+        position: relative;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .widget {
-        display: none;
-        Visibility: hidden;
-    }
-    .hellophoto{
-        display: flex;
-        height: 100%;
-        width: 300%;
-    }
-    .map{
+    .map {
         margin-left: auto;
         margin-right: auto;
-        width: 500px;
-        height: 400px;
+        width: auto;
+        height: auto;
         display: flex;
     }
-    .onastext{
-        left: 0%;
-        margin-left: 10%;
-        margin-right: 10%;
-
-    }
-    .onas1{
-        display: none;
-        Visibility: hidden;
-    }
-    .bron{
-        display: none;
-        Visibility: hidden;
-    }
-    .photo1{
-        margin: 15px;
-    }
-    .ph{
-        height: 100%;
-        width: 100%;
-    }
+    
 
 }
