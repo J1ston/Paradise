@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@100;300;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Merriweather:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', cursive;
+    font-weight: 600;
 }
 
 body {
@@ -167,6 +168,7 @@ header h1 {
     z-index: 0;
     max-width: 99vw;
     min-height: 100vh;
+    font-family: 'Great Vibes', 'cursive';
 }
 
 .map {
@@ -196,7 +198,7 @@ header h1 {
     margin-left: -250px;
     /* margin-top = - height / 2 */
     margin-top: -125px;
-
+    font-family: 'Great Vibes', 'cursive';
 }
 
 .white {
