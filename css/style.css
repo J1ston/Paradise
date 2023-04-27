@@ -174,7 +174,7 @@ header h1 {
     margin-right: auto;
     height: auto;
     display: flex;
-    min-width: 90vw;
+
     min-height: 300px;
     max-width: 90vw;
 }
@@ -458,7 +458,8 @@ footer ul.social-icons li a:hover {
         min-height: 300px;
         max-width: 80vw;
         position: relative;
-        width: 80vw;
+        min-width: 90vw;
+        max-width: 90vw;
     }
 
     .onastext {
