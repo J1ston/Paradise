@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@100;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Merriweather:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +64,24 @@ header h1 {
     text-align: center;
 }
 
+
+
+.sal {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: rgb(197, 58, 58);
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+
+
 .rooms-container {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +98,8 @@ header h1 {
     width: 300px;
     height: 400px;
     border-radius: 15px;
+    position: relative;
+    text-align: center;
 }
 
 .room-image {
@@ -149,10 +170,18 @@ header h1 {
 }
 
 .photo1 {
-    margin-right: 20px;
     position: relative;
 
+    margin: 10vw;
 
+    justify-content: space-around;
+}
+
+.ph {
+    border: 1px solid black;
+    border-radius: 20px;
+    max-height: 30%;
+    max-width: 30%;
 }
 
 
@@ -435,7 +464,7 @@ footer ul.social-icons li a:hover {
 
     .widget,
     .inf,
-    .header{
+    .header {
         display: none;
         Visibility: hidden;
     }
@@ -451,6 +480,8 @@ footer ul.social-icons li a:hover {
         top: 30%;
         max-width: 99vw;
         text-align: center;
+        margin: auto;
+        left: 0;
     }
 
 
@@ -495,14 +526,9 @@ footer ul.social-icons li a:hover {
         visibility: visible;
         position: relative;
     }
-    .hellotext{
+
+    .hellotext {
         font-size: 200%;
         width: 3s00px;
     }
 }
-
-
-
-/*
-    <img src="photo_2023-04-22_13-54-40 [problembo.com].jpg" alt="" width="100%">
-*/
