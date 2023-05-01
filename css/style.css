@@ -568,6 +568,17 @@ footer ul.social-icons li a:hover {
         font-size: 200%;
         width: 3s00px;
     }
+    .ph {
+        border: 1px solid black;
+        border-radius: 20px;
+        max-height: 80%;
+        max-width: 80%;
+        transition: 0.5s;
+    }
+    
+    .ph:hover{
+        transform: scale(1.3);
+    }
 }
 
 
