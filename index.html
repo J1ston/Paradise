@@ -18,11 +18,33 @@
             }
         });
     </script>
-
-
+    
+    <script src="i.js"></script>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded');
+        }
+      </script>
+      <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+
+
     <header>
         <img src="logo.png" alt="логотип гостевого дома Paradise">
         <iframe class="widget" src="https://yandex.ru/sprav/widget/rating-badge/61005869336?type=rating" width="150"
@@ -93,7 +115,7 @@
 
                 <img src="https://avatars.mds.yandex.net/get-altay/5965316/2a00000181a3b81ec0c1314ebe7039ba32d4/L"
                     alt="Room 1" class="room-image">
-                
+
                 <div class="room-info">
                     <div class="room-name">2-х местный на террасе</div>
                     <div class="room-price">3000 руб./ночь</div>
@@ -125,9 +147,9 @@
             <div class="room">
                 <img src="https://avatars.mds.yandex.net/get-altay/771751/2a00000187cc6acfcede42356fc1b425db63/XL"
                     alt="Room 2" class="room-image">
-                    <div class="sal">
-                        <p class="psal">-20%</p>
-                    </div>
+                <div class="sal">
+                    <p class="psal">-20%</p>
+                </div>
                 <div class="room-info">
                     <div class="room-name">3-х местный эконом</div>
                     <div class="room-price">3000 руб./ночь</div>
@@ -168,7 +190,8 @@
                 </div>
             </div>
             <div class="room">
-                <img src="https://avatars.mds.yandex.net/get-altay/902116/2a00000187a8e6f3b63d8551ae8394e1a14d/XL" alt="Room 2" class="room-image">
+                <img src="https://avatars.mds.yandex.net/get-altay/902116/2a00000187a8e6f3b63d8551ae8394e1a14d/XL"
+                    alt="Room 2" class="room-image">
                 <div class="room-info">
                     <div class="room-name">4-х местный семейный</div>
                     <div class="room-price">3500 руб./ночь</div>
@@ -178,6 +201,7 @@
         </div>
         <div class="photo">
             <h2>фото</h2>
+            
             <div class="photo1">
                 <img class="ph"
                     src="https://avatars.mds.yandex.net/get-altay/4398559/2a00000181a3bab0c174d577936f1f41077e/XL"
@@ -188,19 +212,19 @@
                 <img class="ph"
                     src="https://avatars.mds.yandex.net/get-altay/2436798/2a00000181a3b91d5c86ff69446748d12205/XL"
                     alt="">
-                    <img class="ph"
+                <img class="ph"
                     src="https://avatars.mds.yandex.net/get-altay/5449087/2a0000017cd05cdafe1dc549e81a1c385313/XL"
                     alt="">
                 <img class="ph"
                     src="https://avatars.mds.yandex.net/get-altay/4971637/2a0000017cd03c0db42dda4f93890ef1c99a/XL"
                     alt="">
-                    <img class="ph"
+                <img class="ph"
                     src="https://avatars.mds.yandex.net/get-altay/5456749/2a0000017cd03c4c7ae0510c9c3906af9619/XL"
                     alt="">
                 <img class="ph"
                     src="https://avatars.mds.yandex.net/get-altay/5480011/2a0000017ccd38450e6840c4e2b135bbcff2/XL"
                     alt="">
-                    <img class="ph"
+                <img class="ph"
                     src="https://avatars.mds.yandex.net/get-altay/4432502/2a0000017fd6ab584ad5cf9746109e8e2706/XL"
                     alt="">
                 <img class="ph"
@@ -288,6 +312,7 @@
         </div>
     </footer>
     <a href="https://yandex.ru/business/widget/request/company/61005869336" class="bron">забронировать</a>
+    
 </body>
 
 </html>
