@@ -1,0 +1,231 @@
+.preloader {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e2e2e2;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+}
+
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+body{
+    margin: 0;
+
+}
+h1{
+    text-align: center;
+}
+.pod > img{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+.photo1 {
+    position: relative;
+
+    margin: 10vw;
+
+    justify-content: space-around;
+}
+
+.ph {
+    border: 1px solid black;
+    border-radius: 20px;
+    max-height: 30%;
+    max-width: 30%;
+    transition: 0.5s;
+}
+
+.ph:hover {
+    transform: scale(1.3);
+}
+.onas {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    background-color: white;
+    z-index: 10;
+
+    height: 450px;
+
+}
+
+.fo {
+    font-size: 300%;
+    background-color: white;
+}
+
+.onastext {
+    left: 50%;
+    position: absolute;
+    text-align: left;
+    margin-right: 55px;
+    margin-top: 20px;
+    font-size: medium;
+    background-color: white;
+
+}
+
+.onasphoto {
+    position: absolute;
+    margin: auto;
+    margin-top: 70px;
+    background-color: white;
+}
+
+.onas1 {
+    width: 180px;
+    height: 240px;
+    left: 5%;
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    margin-top: 60px;
+
+}
+@media (max-width: 767px) {
+
+    .widget,
+    .inf {
+        display: none;
+        Visibility: hidden;
+    }
+
+    .hellophoto {
+
+        display: flex;
+        height: 100vw;
+        width: 100vh;
+
+    }
+
+    .hellotext {
+        top: 30%;
+        max-width: 99vw;
+        text-align: center;
+        margin: auto;
+        left: 0;
+    }
+
+
+    .map {
+
+        display: flex;
+        min-height: 300px;
+        max-width: 80vw;
+        position: relative;
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .onastext {
+        left: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+
+    
+
+    .bron {
+        display: none;
+        Visibility: hidden;
+    }
+
+    .photo1 {
+        margin: 15px;
+    }
+
+    .ph {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ninf {
+        display: inline;
+        visibility: visible;
+        position: relative;
+    }
+
+    .hellotext {
+        font-size: 200%;
+        width: 3s00px;
+    }
+
+    .ph {
+        border: 1px solid black;
+        border-radius: 20px;
+        max-height: 80%;
+        max-width: 80%;
+        transition: 0.5s;
+    }
+
+    .ph:hover {
+        transform: scale(1.3);
+    }
+
+    header {
+        position: static;
+        width: 99vw;
+    }
+}
